@@ -4,6 +4,7 @@ import type { FormRules } from "element-plus"
 import { createTableDataApi, deleteTableDataApi, getTableDataApi, updateTableDataApi } from "@@/apis/tables"
 import { usePagination } from "@@/composables/usePagination"
 import { CirclePlus, Delete, Download, Refresh, RefreshRight, Search } from "@element-plus/icons-vue"
+import { ElMessage, ElMessageBox } from "element-plus"
 import { cloneDeep } from "lodash-es"
 
 defineOptions({

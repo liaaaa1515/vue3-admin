@@ -3,6 +3,7 @@ import type { TableResponseData } from "@@/apis/tables/type"
 import type { ElMessageBoxOptions } from "element-plus"
 import type { VxeFormInstance, VxeFormProps, VxeGridInstance, VxeGridProps, VxeModalInstance, VxeModalProps } from "vxe-table"
 import { deleteTableDataApi, getTableDataApi } from "@@/apis/tables"
+import { ElMessage, ElMessageBox } from "element-plus"
 
 defineOptions({
   // 命名当前组件

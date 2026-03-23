@@ -60,6 +60,17 @@ export const constantRoutes: RouteRecordRaw[] = [
           svgIcon: "dashboard",
           affix: true
         }
+      },
+
+      {
+        path: "big-data-table", // 子路由路径（访问地址：/big-data-table）
+        component: () => import("@/pages/big-data-table/index.vue"), // 注意路径！！
+        name: "BigDataTable", // 唯一名称，必须有
+        meta: {
+          title: "大数据表格", // 侧边栏显示的菜单名称
+          elIcon: "DataBoard", // Element Plus 图标，和示例集合保持风格一致
+          affix: false // 不固定在标签栏
+        }
       }
     ]
   },
@@ -247,6 +258,5 @@ export function resetRouter() {
     location.reload()
   }
 }
-
 // 注册路由导航守卫
 registerNavigationGuard(router)
